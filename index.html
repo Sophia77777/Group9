@@ -28,6 +28,53 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+        .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: transparent;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+    </style>
 
 </head>
 
@@ -55,8 +102,18 @@
                         <a href="about.html"><font color="black">ABOUT US</font></a>
                     </li>
                     <li>
-                        <a href="post.html"><font color="black">BLOGS</font></a>
-                       
+                        <!-- <a href="post.html"><font color="black">BLOGS</font></a> -->
+                       <div class="dropdown">
+  <button class="dropbtn"><font color="black"> BLOGS</font></button>
+  <div class="dropdown-content">
+    <a href="#">IFUGAO</a>
+    <a href="#">ABRA</a>
+    <a href="#">APAYAO</a>
+    <a href="#">KALINGA</a>
+    <a href="#">MT PROVINCE</a>
+    <a href="#">BENGUET</a>
+  </div>
+</div>
                     </li>
                     <li>
                         <a href="contact.html"><font color="black">CONTACT</font></a>
@@ -70,7 +127,7 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/mt1.jpg')">
+    <header class="intro-header" style="background-image: url('img/per1.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
