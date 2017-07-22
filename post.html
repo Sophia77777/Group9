@@ -29,6 +29,48 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+        .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    
+    border: none;
+    cursor: pointer;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+   
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,3);
+   
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: transparent;}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+    </style>
 
 </head>
 
@@ -55,9 +97,23 @@
                     <li>
                         <a href="about.html"><font color="black">ABOUT US</font></a>
                     </li>
-                    <li>
-                        <a href="post.html"><font color="black">BLOGS</font></a>
-                       
+                   <li>
+
+                        <!-- <a href="post.html"><font color="black">BLOGS</font></a> -->
+                       <div class="dropdown">
+ <button class="dropbtn"> <a href="post.html"> <font color="black">BLOGS </font></a></button>
+  <div class="dropdown-content">
+    <a href="ifugao.html">IFUGAO</a>
+    <a href="abra.html">ABRA</a>
+    <a href="apayao.html">APAYAO</a>
+    <a href="kalinga.html">KALINGA</a>
+    <a href="mountainprovince.html">MT PROVINCE</a>
+    <a href="benguet.html">BENGUET</a>
+  </div>
+</div>
+
+                      <!--  <a href="post.html">BLOGS</a> -->
+
                     </li>
                     <li>
                         <a href="contact.html"><font color="black">CONTACT</font></a>
@@ -79,12 +135,12 @@
        
     <div class="col-md-2 sidenav ">
         <div class="affix">
-        <br>
+        
     <br>
     <br>
         <hr>
         <hr>
-     <!--
+     
       <h4>Get on Your Way To:</h4>
       <p><a href="benguet.html">Benguet</a></p>
       <p><a href="mountainprovince.html">Mountain Province</a></p>
@@ -92,7 +148,7 @@
       <p><a href="abra.html">Abra</a></p>
       <p><a href="kalinga.html">Kalinga</a></p>
       <p><a href="ifugao.html">Banaue</a></p>
-     -->
+     
         <br>
     </div>
     </div>
@@ -102,10 +158,10 @@
  
     <div class="col-md-10 text-left"> 
       <div class="container-fluid text-center">  
-      <br>
+      
     <br>
     <br> 
-<img src="img\fir.jpg" class="img-rounded" height="400" width="1000" >
+<img src="img\AN.jpg" class="img-rounded" height="500" width="1000" >
 <h2>Most Visited Places in the Cordilleras that were preserved by our Ancestors</h2>
 <br>
 <p> 

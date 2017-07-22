@@ -28,6 +28,48 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+        .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    
+    border: none;
+    cursor: pointer;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+   
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+   
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: transparent;}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+    </style>
 
 </head>
 
@@ -49,14 +91,28 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                      <li>
-                        <a href="index.html">HOME </a>
+                        <a href="index.html"> HOME </a>
                     </li>
                     <li>
                         <a href="about.html">ABOUT US</a>
                     </li>
                     <li>
-                        <a href="post.html">BLOGS</a>
-                       
+
+                        <!-- <a href="post.html"><font color="black">BLOGS</font></a> -->
+                       <div class="dropdown">
+ <button class="dropbtn"><a href="post.html">BLOG</a></button>
+  <div class="dropdown-content">
+    <a href="ifugao.html">IFUGAO</a>
+    <a href="abra.html">ABRA</a>
+    <a href="apayao.html">APAYAO</a>
+    <a href="kalinga.html">KALINGA</a>
+    <a href="mountainprovince.html">MT PROVINCE</a>
+    <a href="benguet.html">BENGUET</a>
+  </div>
+</div>
+
+                      <!--  <a href="post.html">BLOGS</a> -->
+
                     </li>
                     <li>
                         <a href="contact.html">CONTACT</a>
@@ -70,14 +126,14 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/2.jpg')">
+    <header class="intro-header" style="background-image: url('img/lam.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
-                        <h1><font color="black">Contact Us</font></h1>
+                        <h1>Contact Us</h1>
                         <hr class="small">
-                        <span class="subheading"><font color="black">Have questions? We have answers (maybe).</font></span>
+                        <span class="subheading">Have questions? We have answers (maybe).</span>
                     </div>
                 </div>
             </div>
